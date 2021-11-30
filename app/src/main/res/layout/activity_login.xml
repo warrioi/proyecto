@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.6">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/ImageView_layoutHeight"
+                android:src="@drawable/infogram"/>
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:fillViewport="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/login_horizontallMargin"
+                android:layout_marginRight="@dimen/login_horizontallMargin">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/editTextWhite">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="@string/nombre_de_usuario">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/editTextWhite"
+                    android:layout_marginTop="@dimen/login_marginnTop">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPassword"
+                        android:hint="@string/contrasena">
+
+                    </com.google.android.material.textfield.TextInputEditText>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/button_text"
+                    android:layout_marginTop="@dimen/login_marginnTop"
+                    android:theme="@style/RaiseButtomDark"
+                    android:onClick="login"/>
+
+                <TextView
+                    android:id="@+id/No_tienes_cuenta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/No_tienes_cuenta"
+                    android:textColor="@color/textView_textColor"
+                    android:textSize="@dimen/textView_textSize"
+                    android:layout_marginTop="@dimen/login_marginnTop">
+                </TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/Crea_una_aqui"
+                    android:layout_marginTop="@dimen/login_marginnTop"
+                    android:textColor="@color/textView_textColor"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textView_textSize"
+                    android:layout_toRightO="@+id/No_tienes_cuenta"
+                    android:onClick="goCreateAcoount">
+
+                </TextView>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

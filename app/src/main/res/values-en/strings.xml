@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Infogram</string>
+    <string name="nombre_de_usuario">Ussername</string>
+    <string name="contrasena">Password</string>
+    <string name="button_text">LOGIN</string>
+    <string name="No_tienes_cuenta">¿No_tienes_cuenta?</string>
+    <string name="Crea_una_aqui">Crea_una_aqui</string>
+    <string name="nombre">Nombre</string>
+    <string name="Usuario">Usuario</string>
+    <string name="ConfirmarContraseña">Confirmar_Contraseña</string>
+    <string name="button_text_create_Acoount">UNETE</string>
+    <string name="carlos_vargas_cardview">Carlos Vargas</string>
+    <string name="hace_cardview">hace_cardview</string>
+    <string name="dias_cardview">"4 dias"</string>
+    <string name="Me_gusta_cardview">10_Me_gusta</string>
+    <string name="buscar_item">Buscar</string>
+    <string name="home_item">home</string>
+    <string name="yo_item">Yo</string>
+</resources>
